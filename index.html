@@ -24,17 +24,58 @@
 
 <h3>In progress</h3>
 	<ol>
-		<li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML" target="_blank">https://developer.mozilla.org/en-US/docs/Learn/HTML</a></li>
+		<li>Read Full Web overview: <a href="https://developer.mozilla.org/en-US/docs/Learn/" target="_blank">https://developer.mozilla.org/en-US/docs/Learn/</a>
+			<ol>
+				<li>
+				<a href="https://developer.mozilla.org/en-US/docs/Learn/HTML" target="_blank">https://developer.mozilla.org/en-US/docs/Learn/HTML</a>
+				</li>
+			</ol>
+		</li>
 	</ol>
 
 <h3>Done</h3>
 	<ol>
-		<li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web" target="_blank">https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web</a></li>
-		<li><a href="https://en.cppreference.com/w/cpp/container" target="_blank">https://en.cppreference.com/w/cpp/container</a></li>
+		<li>Read Full Web overview: <a href="https://developer.mozilla.org/en-US/docs/Learn/" target="_blank">https://developer.mozilla.org/en-US/docs/Learn/</a>
+			<ol>
+				<li>
+				<a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web" target="_blank">https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web</a>
+				</li>
+			</ol>
+		</li>
+
+		<li>Read jsguide:
+			<ol>
+				<li>
+					<a href="https://google.github.io/styleguide/jsguide.html">https://google.github.io/styleguide/jsguide.html</a>
+				</li>
+				<li>Open source contributions (Raise Issues & Create Pull requests)
+					<ol>
+						<li><a href="https://github.com/google/styleguide/issues/created_by/manoharreddyporeddy">https://github.com/google/styleguide/issues/created_by/manoharreddyporeddy</a></li>
+						<li><a href="https://github.com/google/styleguide/pulls/manoharreddyporeddy">https://github.com/google/styleguide/pulls/manoharreddyporeddy</a></li>
+						<li><a href="https://jira.mongodb.org/browse/NODE-2886">https://jira.mongodb.org/browse/NODE-2886</a></li>
+					</ol>
+				</li>
+			</ol>
+		</li>
+
+		<li>Solve 500 problems on LeetCode.
+			<ol>
+				<li>
+					<a href="https://leetcode.com/pgmreddy/">https://leetcode.com/pgmreddy/</a>
+				</li>
+			</ol>
+		</li>
+
+		<li>Read C++ containers:
+			<ol>
+				<li>
+					<a href="https://en.cppreference.com/w/cpp/container" target="_blank">https://en.cppreference.com/w/cpp/container</a>
+				</li>
+			</ol>
+		</li>
 	</ol>
 
 <br/>
-
 
 <h2>Detailed</h2>
 
@@ -161,6 +202,71 @@
 https://www.textfixer.com/html/convert-url-to-html-link.php
 https://coolbackgrounds.io/
 https://cssgradient.io/
+
+
+
+what the viewport is?
+	document.querySelector('html').clientWidth
+
+Resolution switching
+
+- Different sizes
+
+	// ----
+	<img srcset="elva-fairy-480w.jpg 480w,
+				 elva-fairy-800w.jpg 800w"
+		 sizes="(max-width: 600px) 480px,
+				800px"
+		 src="elva-fairy-800w.jpg"
+		 alt="Elva dressed as a fairy">
+	// ----
+	a viewport width of 480px loads the page,
+		the (max-width: 600px) media condition will be true
+		so the browser chooses the 480px slot.
+			The elva-fairy-480w.jpg will be loaded,
+				as its inherent width (480w) is closest to the slot size.
+	// ----
+
+- Same size, different resolutions
+
+	<img srcset="elva-fairy-320w.jpg,
+				 elva-fairy-480w.jpg 1.5x,
+				 elva-fairy-640w.jpg 2x"
+		 src="elva-fairy-640w.jpg"
+		 alt="Elva dressed as a fairy">
+
+	if the device accessing the page has a standard/low resolution display, with
+		one device pixel representing each CSS pixel,
+			the elva-fairy-320w.jpg image will be loaded
+		The 320px image is only 39KB.
+	If the device has a high resolution of
+		two device pixels per CSS pixel or more,
+			the elva-fairy-640w.jpg image will be loaded.
+		The 640px image is 93KB.
+
+Art direction
+
+	<picture>
+	  <source media="(max-width: 799px)" srcset="elva-480w-close-portrait.jpg">
+	  <source media="(min-width: 800px)" srcset="elva-800w.jpg">
+	  <img src="elva-800w.jpg" alt="Chris standing up holding his daughter Elva">
+	</picture>
+
+
+// --------
+
+Use modern image formats boldly
+
+<picture>
+  <source type="image/svg+xml" srcset="pyramid.svg">
+  <source type="image/webp" srcset="pyramid.webp"> 
+  <img src="pyramid.png" alt="regular pyramid built from four equilateral triangles">
+</picture>
+
+
+// --------
+
+
 -->
 </body>
 
