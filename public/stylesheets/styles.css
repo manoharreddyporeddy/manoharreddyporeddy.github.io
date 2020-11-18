@@ -131,6 +131,11 @@ h7 {
   text-decoration: teal wavy underline;
 }
 
+hr {
+  border: 1px solid green;
+  /* border-radius: 2px; */
+}
+
 /*
 TODO:
 
@@ -182,7 +187,7 @@ a:hover,
 a:focus {
   text-decoration: none;
   font-weight: bold;
-  color: rgb(129, 134, 129);
+  color: rgb(0, 127, 0);
 }
 
 /* CSS rule sets (rules)
