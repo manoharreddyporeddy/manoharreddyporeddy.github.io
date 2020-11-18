@@ -1,10 +1,14 @@
 /* @import 'styles2.css'; */
 
 body {
-  font: 1em/150% Helvetica, Arial, sans-serif;
+  /* font: 1em/150% Helvetica, Arial, sans-serif; */
+  /* font-family: Georgia, serif; */
+  /* font-family: sans-serif; */
+  /* font-family: cursive; */
+  /* font-family: system-ui; */
   /* font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif; */
-  padding: 1em;
   /* padding: 50px; */
+  padding: 1em;
   margin: 0 auto;
   max-width: 50em;
 
@@ -14,6 +18,21 @@ body {
     rgba(100, 100, 0, 0.5)
   ); */
   /* url('../../media/examples/lizard.png'); */
+
+  /* font-family: Georgia, serif; */
+  /* font-size: 20px; */
+  /* letter-spacing: 0.1em; */
+  word-spacing: 0.1em;
+  /* letter-spacing: 1.2px; */
+  /* word-spacing: 1.2px; */
+  /* color: #000000; */
+  /* font-weight: normal; */
+  /* text-decoration: none; */
+  /* font-style: normal; */
+  /* font-variant: normal; */
+  /* text-transform: none; */
+
+  font-family: 'Open Sans', sans-serif;
 }
 
 /* @media (max-width: 30em) {
@@ -95,6 +114,21 @@ li {}
 }
 li {
   list-style-type: '\1F44D';
+  /* border-bottom: 1px solid lightgray; */
+  /* border-bottom: 1rem solid; */
+  /* border-bottom: 4mm ridge rgb(170, 50, 220, .6); */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h7 {
+  /* text-decoration: underline overline green; */
+  /* text-decoration: underline; */
+  text-decoration: teal wavy underline;
 }
 
 /*
@@ -102,8 +136,8 @@ TODO:
 
 h1
 a:link
-.manythings
-#onething
+.many-things
+#one-thing
 *
 .box p
 .box p:first-child
@@ -148,10 +182,10 @@ a:hover,
 a:focus {
   text-decoration: none;
   font-weight: bold;
-  color: green;
+  color: rgb(129, 134, 129);
 }
 
-/* CSS rulesets (rules)
+/* CSS rule sets (rules)
 
 selectors
     CSS declaration block
@@ -174,9 +208,9 @@ selectors
 /* font-size: 200%; */
 /* padding: 5px; */
 
-.outer {
-  border: 5px solid black;
-}
+/* .outer { */
+/* border: 5px solid black; */
+/* } */
 
 .box1 {
   background-color: rebeccapurple;
@@ -195,7 +229,7 @@ selectors
   margin: 30px;
   width: 100px;
   height: 100px;
-  background-color: rebeccapurple;
+  background-color: rgb(208, 172, 243);
   transform: rotate(0.2turn);
 }
 
