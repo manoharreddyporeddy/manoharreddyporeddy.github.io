@@ -1,7 +1,84 @@
+/* @import 'styles2.css'; */
+
 body {
-  padding: 50px;
-  font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
+  font: 1em/150% Helvetica, Arial, sans-serif;
+  /* font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif; */
+  padding: 1em;
+  /* padding: 50px; */
+  margin: 0 auto;
+  max-width: 50em;
+
+  /*
+  background-image: linear-gradient(
+    rgba(0, 100, 100, 0.5),
+    rgba(100, 100, 0, 0.5)
+  ); */
+  /* url('../../media/examples/lizard.png'); */
 }
+
+/* @media (max-width: 30em) {
+  body {
+    background-color: blue;
+  }
+} */
+
+@media (min-width: 70em) {
+  /* Increase the global font size on larger screens or windows
+     for better readability */
+  body {
+    font-size: 110%;
+  }
+}
+
+/*
+TODO:
+
+h1 {font-size: 1.5em;}
+
+div p, #id:first-line {
+  background-color: red;
+  border-radius: 3px;
+}
+
+div p {
+  margin: 0;
+  padding: 1em;
+}
+
+div p + p {
+  padding-top: 0;
+}
+*/
+
+/*
+shorthand properties
+    font
+    background
+    border
+    padding
+    margin
+
+    4-value shorthands
+        top, right, bottom, left (clockwise from the top)
+            padding: 10px 15px 15px 5px;
+                    padding-top: 10px;
+                    padding-right: 15px;
+                    padding-bottom: 15px;
+                    padding-left: 5px;
+
+            background: red url(bg-graphic.png) 10px 10px repeat-x fixed;
+                    background-color: red;
+                    background-image: url(bg-graphic.png);
+                    background-position: 10px 10px;
+                    background-repeat: repeat-x;
+                    background-attachment: fixed;
+            NOTE: Omission in CSS shorthand     can override    previously set values    to its initial value
+    2-value shorthands, which set padding/margin
+        top/bottom, right/left
+                margin: 0 auto;
+            NOTE: Omission in CSS shorthand     can override    previously set values    to its initial value
+
+*/
 
 /*
 h1 {}
@@ -74,6 +151,14 @@ a:focus {
   color: green;
 }
 
+/* CSS rulesets (rules)
+
+selectors
+    CSS declaration block
+        CSS declaration
+            property: value
+*/
+
 /* background-color: purple; */
 /* background-color: yellow; */
 /* border: 1px solid black; */
@@ -88,3 +173,34 @@ a:focus {
 /* font-size: 200%; */
 /* font-size: 200%; */
 /* padding: 5px; */
+
+.outer {
+  border: 5px solid black;
+}
+
+.box1 {
+  background-color: rebeccapurple;
+  color: white;
+  padding: 10px;
+  width: calc(10%);
+}
+.box2 {
+  background-color: lightgreen;
+  color: black;
+  padding: 10px;
+  width: calc(10% + 10px);
+}
+
+.box {
+  margin: 30px;
+  width: 100px;
+  height: 100px;
+  background-color: rebeccapurple;
+  transform: rotate(0.2turn);
+}
+
+/* Handle basic element styling */
+/* -------------------------------------------------------------------------------------------- */
+
+/* Handle specific elements nested in the DOM  */
+/* -------------------------------------------------------------------------------------------- */
