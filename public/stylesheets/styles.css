@@ -1,0 +1,90 @@
+body {
+  padding: 50px;
+  font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
+}
+
+/*
+h1 {}
+
+p,
+li {}
+*/
+
+/* h1 {
+} */
+
+.in-progress {
+  list-style-type: '\1F449';
+}
+li {
+  list-style-type: '\1F44D';
+}
+
+/*
+TODO:
+
+h1
+a:link
+.manythings
+#onething
+*
+.box p
+.box p:first-child
+h1, h2, .intro
+
+*/
+
+/*
+.special {}
+p.special {}
+li.special,
+span.special {}
+*/
+
+/* descendant combinator */
+/* p span {} */
+
+/* selects any <span> that is inside a <p>, which is inside an <article>  */
+/* article p span {} */
+
+/* adjacent sibling combinator */
+/* h1+p {} */
+
+/* selects any <p> that comes directly after a <ul>, which comes directly after an <h1>  */
+/* h1 + ul + p {
+} */
+
+/* This will style any element with a class of special, which is inside a <p>, which comes just after an <h1>, which is inside a <body>. Phew! */
+/* body h1 + p .special {
+} */
+
+/* based on state*/
+
+/*
+a {}
+
+a:link {}
+
+a:visited {} */
+
+a:hover,
+a:focus {
+  text-decoration: none;
+  font-weight: bold;
+  color: green;
+}
+
+/* background-color: purple; */
+/* background-color: yellow; */
+/* border: 1px solid black; */
+/* color: red; */
+/* color: black; */
+/* color: green; */
+/* color: orange; */
+/* color: rebeccapurple; */
+/* color: #00B7FF; */
+/* color: yellow; */
+/* color: blue; */
+/* font-size: 200%; */
+/* font-size: 200%; */
+/* padding: 5px; */
