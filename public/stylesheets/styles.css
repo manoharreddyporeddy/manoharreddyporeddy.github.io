@@ -109,18 +109,29 @@ li {}
 /* h1 {
 } */
 
-.in-progress {
+/* .in-progress {
   list-style-type: '\1F449';
-}
-li {
-  list-style-type: '\1F44D';
-  /* border-bottom: 1px solid lightgray; */
-  /* border-bottom: 1rem solid; */
-  /* border-bottom: 4mm ridge rgb(170, 50, 220, .6); */
+} */
+/* li { */
+/* list-style-type: '\1F44D'; */
+/* border-bottom: 1px solid lightgray; */
+/* border-bottom: 1rem solid; */
+/* border-bottom: 4mm ridge rgb(170, 50, 220, .6); */
+/* } */
+
+li::marker {
+  color: green;
 }
 
-h1,
-h2,
+li[class='in-progress']::marker {
+  color: red;
+  font-size: 1.1em;
+}
+
+h2 {
+  text-decoration: red wavy underline;
+}
+
 h3,
 h4,
 h5,
