@@ -129,7 +129,7 @@ li[class='in-progress']::marker {
 }
 
 h2 {
-  text-decoration: red wavy underline;
+  text-decoration: tomato wavy underline;
 }
 
 h3,
@@ -139,7 +139,7 @@ h6,
 h7 {
   /* text-decoration: underline overline green; */
   /* text-decoration: underline; */
-  text-decoration: teal wavy underline;
+  text-decoration: green wavy underline;
 }
 
 hr {
