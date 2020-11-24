@@ -11,14 +11,12 @@ body {
   padding: 1em;
   margin: 0 auto;
   max-width: 50em;
-
   /*
   background-image: linear-gradient(
     rgba(0, 100, 100, 0.5),
     rgba(100, 100, 0, 0.5)
   ); */
   /* url('../../media/examples/lizard.png'); */
-
   /* font-family: Georgia, serif; */
   /* font-size: 20px; */
   /* letter-spacing: 0.1em; */
@@ -31,7 +29,6 @@ body {
   /* font-style: normal; */
   /* font-variant: normal; */
   /* text-transform: none; */
-
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -116,11 +113,17 @@ li {}
 /* .in-progress {
   list-style-type: '\1F449';
 } */
+
 /* li { */
+
 /* list-style-type: '\1F44D'; */
+
 /* border-bottom: 1px solid lightgray; */
+
 /* border-bottom: 1rem solid; */
+
 /* border-bottom: 4mm ridge rgb(170, 50, 220, .6); */
+
 /* } */
 
 li::marker {
@@ -136,11 +139,7 @@ h2 {
   text-decoration: tomato wavy underline;
 }
 
-h3,
-h4,
-h5,
-h6,
-h7 {
+h3, h4, h5, h6, h7 {
   /* text-decoration: underline overline green; */
   /* text-decoration: underline; */
   text-decoration: green wavy underline;
@@ -173,19 +172,24 @@ span.special {}
 */
 
 /* descendant combinator */
+
 /* p span {} */
 
 /* selects any <span> that is inside a <p>, which is inside an <article>  */
+
 /* article p span {} */
 
 /* adjacent sibling combinator */
+
 /* h1+p {} */
 
 /* selects any <p> that comes directly after a <ul>, which comes directly after an <h1>  */
+
 /* h1 + ul + p {
 } */
 
 /* This will style any element with a class of special, which is inside a <p>, which comes just after an <h1>, which is inside a <body>. Phew! */
+
 /* body h1 + p .special {
 } */
 
@@ -198,8 +202,7 @@ a:link {}
 
 a:visited {} */
 
-a:hover,
-a:focus {
+a:hover, a:focus {
   text-decoration: none;
   font-weight: bold;
   color: rgb(0, 127, 0);
@@ -214,22 +217,37 @@ selectors
 */
 
 /* background-color: purple; */
+
 /* background-color: yellow; */
+
 /* border: 1px solid black; */
+
 /* color: red; */
+
 /* color: black; */
+
 /* color: green; */
+
 /* color: orange; */
+
 /* color: rebeccapurple; */
+
 /* color: #00B7FF; */
+
 /* color: yellow; */
+
 /* color: blue; */
+
 /* font-size: 200%; */
+
 /* font-size: 200%; */
+
 /* padding: 5px; */
 
 /* .outer { */
+
 /* border: 5px solid black; */
+
 /* } */
 
 .box1 {
@@ -238,6 +256,7 @@ selectors
   padding: 10px;
   width: calc(10%);
 }
+
 .box2 {
   background-color: lightgreen;
   color: black;
@@ -254,6 +273,7 @@ selectors
 }
 
 textarea {
+  margin: 10px;
   width: 100%;
   height: 100%;
   min-height: 300px;
@@ -263,7 +283,9 @@ textarea {
 }
 
 /* Handle basic element styling */
+
 /* -------------------------------------------------------------------------------------------- */
 
 /* Handle specific elements nested in the DOM  */
+
 /* -------------------------------------------------------------------------------------------- */
