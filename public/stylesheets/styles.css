@@ -126,13 +126,13 @@ li {}
 
 /* } */
 
-li::marker {
-  color: green;
-}
-
-li[class='in-progress']::marker {
+ul[class='in-progress'] li::marker {
   color: red;
   font-size: 1.1em;
+}
+
+ul li::marker {
+  color: green;
 }
 
 h2 {
