@@ -126,23 +126,36 @@ li {}
 
 /* } */
 
-ul[class='in-progress'] li::marker {
-  color: red;
+:root {
+  --in-progress-1: purple;
+  --in-progress-2: tomato;
+  --in-progress-3: green;
+}
+
+div[class='in-progress-1'] h2 {
+  text-decoration: var(--in-progress-1) wavy underline;
+}
+
+div[class='in-progress-2'] h2 {
+  text-decoration: var(--in-progress-2) wavy underline;
+}
+
+h3, h4, h5, h6, h7 {
+  text-decoration: var(--in-progress-3) wavy underline;
+}
+
+div[class='in-progress-1'] li::marker {
+  color: var(--in-progress-1);
+  font-size: 1.1em;
+}
+
+div[class='in-progress-2'] li::marker {
+  color: var(--in-progress-2);
   font-size: 1.1em;
 }
 
 ul li::marker {
   color: green;
-}
-
-h2 {
-  text-decoration: tomato wavy underline;
-}
-
-h3, h4, h5, h6, h7 {
-  /* text-decoration: underline overline green; */
-  /* text-decoration: underline; */
-  text-decoration: green wavy underline;
 }
 
 hr {
