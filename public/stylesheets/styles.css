@@ -295,6 +295,11 @@ textarea {
   white-space: pre;
 }
 
+.updated-on {
+  float: right;
+  color: rgba(0, 0, 0, .54);
+}
+
 /* Handle basic element styling */
 
 /* -------------------------------------------------------------------------------------------- */
