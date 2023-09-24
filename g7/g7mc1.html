@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        background-color: linen;
+      }
+
+      .cls0 {
+        font: bold normal normal 30px/40px "Courier New", monospace;
+        text-transform: capitalize;
+      }
+      .cls1 {
+        font: bold normal normal 22px/30px "Courier New", monospace;
+        text-transform: capitalize;
+      }
+    </style>
+  </head>
+  <body>
+    <pre class="cls0">
+Class VI, Mathematics, Chapter 1
+    </pre>
+
+    <pre class="cls1">
+==============================
+Greater / smaller
+
+    1 Bigger highest place value is greater
+                    highest place value                           highest place value
+                    (TENS)                     19 >     9         (ONES)
+                    (THOUSANDS)             1,000 >     9         (ONES)
+                    (HUNDREDS)                100 >    99         (TENS)
+                    (HUNDREDS)                999 &lt; 1,000         (THOUSANDS)
+    2 Same highest place value
+            compare each place value, highest to lowest
+                if greater number is greater
+
+        A. digit at the ones place (9) is greater than digit at the ones place (0)
+                >   ?
+                9 > 0
+        B. digit at the tens place (2) is greater than digit at the tens place (1)
+                >    ?
+                29 > 19
+        C. digit at the ones place (5) is greater than digit at the ones place (3)
+                =>   =?
+                45 > 43
+        D. digit at the tens place (9) is greater than digit at the tens place (1)
+                ===>    ===?
+                45194 > 45114
+        E. digit at the tens place (7) is greater than digit at the tens place (6)
+                == == == =>    == == == =?
+                10,00,00,170 > 10,00,00,160
+        F. digit at the hundreds place (0) is smaller than digit at the hundreds place (1)
+                == == == ?     == == == &lt;
+                20,00,01,099 &lt; 20,00,01,170
+
+    3 All place value are equal => equal
+                123     = 123
+                7897899 = 7897899
+
+==============================
+
+Without repetition, make the greatest and smallest from given n-digit numbers
+
+        . greatest = arrange big digits to small digits
+        . smallest = arrange small digits to big digits
+
+        4-digit number      smallest    greatest
+        3251                    1235        5321
+        3250                     235        5320
+
+        3-digit number      smallest    greatest
+        251                      125         521
+        250                       25         520
+
+        2-digit number      smallest    greatest
+        21                        12          21
+        20                         2          20
+
+        2-digit number      smallest    greatest
+        1                          1           1
+        0                          1           0
+
+==============================
+
+Create different 4-digit numbers in such a way that no digit is repeated in them
+    3 4 1 2
+    
+    1234  (increasing)
+    1243
+    1324
+    1342
+    1423
+    1432
+        2134
+        2143
+        2314
+        2341
+        2413
+        2431
+    3124
+    3142
+    3214
+    3241
+    3412
+    3421
+        4123
+        4132
+        4213
+        4231
+        4312
+        4321  (decreasing)
+==============================
+using digits 4 3 1 2
+find smallest   & greatest
+
+            _ _ _ _
+
+            1 2 3 4     - fill increasing => smallest
+            4 3 2 1     - fill decreasing => greatest
+
+==============================
+using digits 4 3 1 2
+find smallest   & greatest
+digit 4 must always be at tens place
+    
+            _ _ 4 _     - 4 digit must always be at tens place
+
+
+            1 2 4 3     - fill increasing => smallest
+            - -   -
+
+            3 2 4 1     - fill decreasing => greatest
+            - -   -
+        
+==============================
+Make 4-digit numbers
+using both 2 and 3 digits       equal number of times
+find greatest & smallest
+
+
+4-digit numbers                                 _   _   _   _
+
+2 and 3 digits       equal number of times      2   2   3   3
+                                                -   -   -   -
+                                                
+smallest    -                                   2   2   3   3     fill increasing => smallest
+                                                -   -   -   -   
+greatest    -                                   3   3   2   2     fill decreasing => greatest
+                                                -   -   -   -
+
+
+==============================
+Arrange prices in their ascending order (smallest to the greatest / increasing)
+Arrange prices in their descending order (greatest to the smallest / decreasing)
+    4343434, 324244, 15345900, 324214, 67
+
+Count digits
+    4343434 (7 digits)
+    324244 (6 digits)
+    15345900 (8 digits)
+    324214 (6 digits)
+        67 (2 digits)
+
+Arrange in increasing count of digits
+        67 (2 digits)
+    324244 (6 digits)    here, same 6 digits, 4 is in tens place, so bigger than below
+    324214 (6 digits)    here, same 6 digits, 1 is in tens place, so smaller than above
+    4343434 (7 digits)
+    15345900 (8 digits)
+
+So ascending order is
+        67, 324214, 324244, 4343434, 15345900
+
+And descending order is
+        15345900, 4343434, 324244, 324214, 67                ( reverse of ascending )
+
+==============================
+Shifting digit to left or right
+
+    Shifting digit 2 to left
+        812
+        -
+        821
+        -
+        281
+        -
+
+    Shifting digit 2 to right
+        281
+        -
+        821
+        -
+        812
+        -
+
+==============================
+Exchanging 2 digits
+
+    Exchanging the 1st and the 3rd tiles.
+        149
+        - -
+
+        941
+        - -
+
+==============================
+
+Greatest n-digit number + 1 = smallest (n+1)-digit number
+    Greatest 1-digit number + 1             9 + 1 = 10         Smallest (1+1)-digit number
+    Greatest 2-digit number + 1            99 + 1 = 100        Smallest (2+1)-digit number
+    Greatest 3-digit number + 1           999 + 1 = 1000       Smallest (3+1)-digit number
+    Greatest 4-digit number + 1          9999 + 1 = 10000      Smallest (4+1)-digit number
+    Greatest 5-digit number + 1         99999 + 1 = 100000     Smallest (5+1)-digit number
+    Greatest 6-digit number + 1        999999 + 1 = 1000000    Smallest (6+1)-digit number
+==============================
+
+Smallest (n+1)-digit number - 1 = Greatest n-digit number
+    Smallest (1+1)-digit number            10 - 1 =      9     Greatest 2-digit number + 1
+    Smallest (2+1)-digit number           100 - 1 =     99     Greatest 3-digit number + 1
+    Smallest (3+1)-digit number          1000 - 1 =    999     Greatest 4-digit number + 1
+    Smallest (4+1)-digit number         10000 - 1 =   9999     Greatest 5-digit number + 1
+    Smallest (5+1)-digit number        100000 - 1 =  99999     Greatest 6-digit number + 1
+    Smallest (6+1)-digit number       1000000 - 1 = 999999     Greatest 7-digit number + 1
+
+
+==============================
+Place value
+Expansion of number
+
+    5278    = 5000        + 200        + 70        + 8
+            = 5 × 1000    + 2 × 100    + 7 × 10    + 8 x 1
+
+                                                8 is at ONES PLACE
+                                        7 is at TENS PLACE
+                            2 is at HUNDREDS PLACE
+                5 is at THOUSANDS PLACE
+
+    2,46,853
+        = 2 × 1,00,000 + 4 × 10,000 + 6 × 1,000 + 8 × 100 + 5 × 10 + 3 × 1
+            3 at ones place
+            5 at tens place
+            8 at hundreds place
+            6 at thousands place
+            4 at ten thousands place
+            2 at lakh place
+
+==============================
+Indian System of Numeration / Indian place value system
+==============================
+1 ONE           O     =              1 = 1
+1 TEN           T     =             10 = 10 ones
+1 HUNDRED       H     =            100 = 10 tens          = 100 ones
+1 THOUSAND      Th    =          1,000 = 10 hundreds      = 100 tens
+1 TEN THOUSANDS TTh   =         10,000 = 10 thousand      = 100 hundreds      = 1000 tens
+
+1 LAKH          Lakh  =       1,00,000 = 10 ten thousands = 100 THOUSANDS     = 1000 hundreds
+1 TEN LAKHS     TLakh =      10,00,000 = 10 lakhs         = 100 ten thousands = 1000 thousands
+1 CRORE         Cr    =    1,00,00,000 = 10 ten lakhs     = 100 LAKHS         = 1000 ten thousands
+1 TEN CRORES    TCr   =   10,00,00,000 = 10 crores        = 100 ten lakhs     = 1000 lakhs
+1 ARAB          Ar    = 1,00,00,00,000 = 10 ten crores    = 100 CRORES        = 1000 ten lakhs
+
+==============================
+International System of Numeration
+==============================
+1 ONE               O      =             1
+1 TEN               T      =            10
+1 HUNDRED           H      =           100
+1 THOUSAND          Th     =         1,000
+1 TEN THOUSANDS     TTh    =        10,000
+
+1 HUNDRED THOUSANDS HTh    =       100,000
+1 MILLION           M      =     1,000,000
+1 TEN MILLION       TM     =    10,000,000
+1 HUNDRED MILLION   HM     =   100,000,000
+1 BILLION           B      = 1,000,000,000
+
+==============================
+Comparision
+==============================
+1 ONE               O      =              1  =              1 = ONE               O
+1 TEN               T      =             10  =             10 = TEN               T
+1 HUNDRED           H      =            100  =            100 = HUNDRED           H
+1 THOUSAND          Th     =          1,000  =          1,000 = THOUSAND          Th
+1 TEN THOUSANDS     TTh    =         10,000  =         10,000 = TEN THOUSANDS     TTh
+====
+1 HUNDRED THOUSANDS HTh    =        100,000  =       1,00,000 = LAKH              Lakh
+1 MILLION           M      =      1,000,000  =      10,00,000 = TEN LAKHS         TLakh
+1 TEN MILLION       TM     =     10,000,000  =    1,00,00,000 = CRORE             Cr
+1 HUNDRED MILLION   HM     =    100,000,000  =   10,00,00,000 = TEN CRORES        TCr
+1 BILLION           B      =  1,000,000,000  = 1,00,00,00,000 = ARAB              Ar
+
+1 LAKH              Lakh   =       1,00,000  =        100,000 = HUNDRED THOUSANDS HTh
+1 TEN LAKHS         TLakh  =      10,00,000  =      1,000,000 = MILLION           M
+1 CRORE             Cr     =    1,00,00,000  =     10,000,000 = TEN MILLION       TM
+1 TEN CRORES        TCr    =   10,00,00,000  =    100,000,000 = HUNDRED MILLION   HM
+1 ARAB              Ar     = 1,00,00,00,000  =  1,000,000,000 = BILLION           B
+==============================
+
+milli shows           1,000  times smaller    => x / 1,000            = 0.00x
+centi shows             100  times smaller    => x / 100              = 0.0x
+deci  shows              10  times smaller    => x / 10               = 0.x
+                                                x                    = x
+deca  shows              10  times larger     => x * 10               = x0
+hecto shows             100  times larger     => x * 100              = x00
+kilo  shows           1,000  times larger     => x * 1,000            = x,000
+mega  shows        1000,000  times larger     => x * 1,000,000        = x,000,000
+giga  shows   1,000,000,000  times larger     => x * 1,000,000,000    = x,000,000,000
+
+if x = metre
+    1 millimetre    = 0.001 metres         =>      1000  millimetres    = 1 metre
+    1 centimetre    = 0.01 metres          =>      100   centimetres    = 1 metre
+    1 kilometre     = 1000 metres          =>      0.001 kilometre      = 1 metre
+
+if x = gram
+    1 milligram     = 0.001 grams          =>      1000  milligrams    = 1 gram
+    1 centigram     = 0.01 grams           =>      100   centigrams    = 1 gram
+    1 kilogram      = 1000 grams           =>      0.001 kilogram      = 1 gram
+
+==============================
+
+1 second =  1 second
+1 minute = 60 seconds
+1 hour	 = 60 minutes
+1 day	 = 24 hours
+
+            1 hour  = 60 minutes        &lt;============
+                    = 60 *  1 minute
+                    = 60 * 60 seconds
+                    = 3600 seconds      &lt;============
+
+            1 day   = 24 hours          &lt;============
+                    = 24  *   1 hour
+                    = 24  *  60 minutes
+                    = 1440 minutes      &lt;============
+                    = 1440 *  1 minute
+                    = 1440 * 60 seconds
+                    = 86400 seconds     &lt;============
+==============================
+    </pre>
+  </body>
+</html>
