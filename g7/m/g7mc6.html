@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="refresh" content="10">
+    <!-- meta http-equiv="refresh" content="1" -->
     <style>
       body {
         background-color: linen;
@@ -24,6 +24,24 @@
         width: 100%;
       }
     </style>
+    <script type="text/javascript">
+        /*
+            window.addEventListener("beforeunload", function (e) {
+                sessionStorage.setItem('scrollpos', window.scrollY);
+            });
+            document.addEventListener("DOMContentLoaded", function (event) {
+                var scrollpos = sessionStorage.getItem('scrollpos');
+                if (scrollpos) {
+                    window.scrollTo(0, scrollpos);
+                    sessionStorage.removeItem('scrollpos');
+                }
+            });
+            setInterval(function() {
+                // window.location.reload();
+                // document.location.reload(true)
+            }, 1000); 
+        */
+    </script>    
   </head>
   <body>
     <a href="./g7mc2.html"> Back </a> ............... <a href="./index.html"> Next </a>
@@ -66,9 +84,9 @@ To add a positive integer we move towards the right on a number line
 To add a negative integer we move towards the left on a number line
 
 <hr/>
-                    Going up is +ve
+                    Going up = +ve
 
-    Going left is -ve               Going right is +ve
+    Going left is -ve               Going right = +ve
 
                     Going down is -ve
 <hr/>
@@ -97,46 +115,62 @@ Examples:
 Part 1
 
     2 +  3  = 2+3 =  3  --- go right of 0, again go right of 0 => +
-                            
+
    -2 +  3  = 2-3 = -1  --- go LEFT of 0, go right of 0 MORE   => +
     2 -  3  = 2-3 = -1  --- go right of 0, go LEFT of 0 MORE   => -
-                            
+
    -2 -  3  = 2+3 =  5  --- go LEFT of 0, again go LEFT of 0   => -
 
 <hr/>
 
-       +2 =  2      ---------    +number     is same as  number
-       -2 = -2
+    Brackets ()
 
-brackets ()    means   "of"      means   times / multiplication
+    -----------------------
 
-    +(-2) = -2
-    -(+2) = -2
-    -( 2) = -2
-    -(-2) =  2      ---------    - times -   is  +
+    -(number)
+        means    - of            number
+        means   -1 times         number
+        means   -1 multiplied by number
+
+<hr/>
+    +number = number
+          +2  is same as      2
+<hr/>
+    Brackets always exist
+        + +3  is same as   +(+3)
+        - +3  is same as   -(+3)
+        + -3  is same as   +(-3)
+        - -3  is same as   -(-3)
+<hr/>
+    When both +, we get +
+        +(+ )        + of +   = +
+        -(- )        - of -   = +
+
+    When one of them is -, we get -
+        -(+ )        - of +   = -
+        +(- )        - of +   = -
 
 <hr/>
 
-Part 2 - With brackets (), brackets means times/ multiplication
+    + +2  = +2 =  2  ---------    + of +   =  +
+    +(+2) = +2 =  2
+    + -2  = -2       ---------    + of -   =  -
+    +(-2) = -2      
+    - +2  = -2       ---------    - of +   =  -
+    -(+2) = -2      
+    -(+2) = -2      
+    -( 2) = -2      
+    - -2  = +2 =  2  ---------    - of -   =  +
+    -(-2) =  2      ---------    - of -   = +
+    -(-2) = +2 =  2
+<hr/>
 
-    2 + +3  = 2+3 =  3  ---------    + times +   is  +
-    2 +(+3) = 2+3 =  3
-
-    2 + -3  = 2-3 = -1  ---------    + times -   is  -
-    2 +(-3) = 2-3 = -1
-    2 - +3  = 2-3 = -1  ---------    - times +   is  -
-    2 -(+3) = 2-3 = -1
-
-    2 - -3  = 2+3 =  5  ---------    - times -   is  +
-    2 -(-3) = 2+3 =  5
+. Additive inverse of +6  is  -6       ( same as    -(+6)   )
+. Additive inverse of -6  = +6       ( same as    -(-6)   )
 
 <hr/>
 
 Another way of thinking
-
-additive inverse of +6  is  -6       ( same as    -(+6)   )
-additive inverse of -6  is  +6       ( same as    -(-6)   )
-
 
 To subtract an integer from another integer
     it is enough to
